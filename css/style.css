@@ -40,7 +40,6 @@
 
 body {
   font-family: var(--primary-font);
-  /* background-color: var(--secondary-color); */
   background-color: rgb(255, 255, 255);
 }
 
@@ -53,7 +52,6 @@ a {
 }
 
 /* Customizing Scroll bar */
-
 ::-webkit-scrollbar-track {
   background: black;
 }
@@ -65,7 +63,6 @@ a {
 }
 
 /* Customizing input type number */
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -73,7 +70,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* Menu bar button customization */
-
 .bi-list {
   font-size: 25px;
   color: var(--text-gray);
@@ -109,17 +105,8 @@ section {
 }
 
 .main-btn:hover {
-  /* background-color: var(--bg-white); */
-  /* background-color: var(--gray-color); */
   color: black;
   border: 2px solid black;
-}
-
-.on-nav:hover {
-  /* background-color: var(--bg-white); */
-  /* background-color: var(--gray-color); */
-  color: white !important;
-  border: 2px solid white !important;
 }
 
 h1 {
@@ -141,7 +128,7 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-white);
+  color: black;
   margin-bottom: 19px;
 }
 
@@ -174,18 +161,9 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
 /* ------------------------------------------------------------------------------------------- */
 
 /* Navbar Section */
-
 .header_wrapper .navbar {
   padding: 15px 0;
   -webkit-transition: all 0.3s linear;
@@ -231,18 +209,12 @@ textarea:focus {
   transition: 0.3s;
 }
 
-.header_wrapper .nav-item .nav-link:hover::after {
-  width: 100%;
-}
-
+.header_wrapper .nav-item .nav-link:hover::after,
 .header_wrapper .nav-item .nav-link.active {
   width: 100%;
 }
 
-.header_wrapper .nav-item .nav-link.active {
-  color: var(--text-white);
-}
-
+.header_wrapper .nav-item .nav-link.active,
 .header_wrapper .nav-item .nav-link:hover {
   color: var(--text-white);
 }
@@ -258,8 +230,12 @@ textarea:focus {
   width: 100%;
 }
 
-/* Banner Section */
+.header_wrapper .nav-item .main-btn:hover {
+  color: white !important;
+  border: 2px solid white !important;
+}
 
+/* Banner Section */
 .banner_wrapper {
   background-image: url("../images/bg-image.jpg");
   width: 100%;
@@ -272,13 +248,14 @@ textarea:focus {
   padding: 200px 0 100px 0;
 }
 
-/* About Section */
+.banner_wrapper .main-btn:hover {
+  color: white !important;
+  border: 2px solid white !important;
+}
 
+/* About Section */
 .about_wrapper ul.nav-pills {
   border: 1px solid var(--gray-color);
-  /* padding: 0; */
-  /* margin: 0; */
-  /* list-style: none; */
   border-radius: 50px;
 }
 
@@ -297,7 +274,6 @@ textarea:focus {
   background-color: white;
   color: black;
   border: 1px solid black;
-  /* margin: 1px; */
 }
 
 .about_wrapper ul li .nav-link:hover {
@@ -314,17 +290,12 @@ textarea:focus {
 .about_wrapper .single-progress .progress {
   height: 5px;
   border-radius: 4px;
-  /* box-shadow: none; */
-  /* overflow: visible; */
 }
 
 .about_wrapper .single-progress .progress .progress-bar {
-  /* background-image: var(--gradient-color); */
   background-color: black;
-  /* box-shadow: none; */
   border-radius: 4px;
   position: relative;
-  /* transition: 0.5s; */
 }
 
 .about_wrapper .single-progress .progress .progress-value {
@@ -373,7 +344,6 @@ textarea:focus {
 }
 
 /* Services Section */
-
 .services_wrapper .card {
   cursor: pointer;
   background-color: white;
@@ -381,12 +351,8 @@ textarea:focus {
   border-radius: 20px;
 }
 
-.services_wrapper .card h3{
-  color: black;
-}
-
 .services_wrapper .card:hover {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: scale(1.05);
   border: 1px solid black;
   box-shadow: 0 4px 6px rgba(12, 0, 46, 0.05);
@@ -394,7 +360,6 @@ textarea:focus {
 }
 
 /* Portfolio Section */
-
 .portfolio_wrapper .card {
   height: 100%;
   min-height: 350px;
@@ -415,8 +380,6 @@ textarea:focus {
 .portfolio_wrapper .card span {
   transition: background-position 4s ease-in-out 0s;
   position: absolute;
-  /* top: 0; */
-  /* left: 0; */
   width: 100%;
   height: 100%;
   background-position: top center;
@@ -428,7 +391,6 @@ textarea:focus {
 }
 
 /* Contact Section */
-
 .contact_wrapper .form-control,
 .contact_wrapper textarea {
   background-color: transparent;
@@ -440,16 +402,10 @@ textarea:focus {
   border-radius: 15px;
 }
 
+.contact_wrapper .form-control:focus,
+.contact_wrapper textarea:focus,
 .contact_wrapper .form-control:hover,
 .contact_wrapper textarea:hover {
-  border-color: black;
-  color: black;
-  box-shadow: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.contact_wrapper .form-control:focus,
-.contact_wrapper textarea:focus {
   border-color: black;
   color: black;
   box-shadow: none;
@@ -483,7 +439,6 @@ textarea:focus {
 }
 
 /* Footer Section */
-
 .footer_wrapper {
   background-color: var(--bg-dark-blue);
   padding: 20px 0;

@@ -1,5 +1,4 @@
 // For Header black shade on scroll
-
 let nav = document.querySelector(".navbar");
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
